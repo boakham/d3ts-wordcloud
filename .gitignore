@@ -1,2 +1,2 @@
-nbproject/
-bower_components/
+node_modules/
+/*.tgz
