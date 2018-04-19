@@ -5,11 +5,11 @@ d3.layout.cloud = cloud;
 declare var window: any;
 
 export class D3JsWordcloud {
-    static init(targetElement: HTMLDivElement, tags: {"key": string, "value": number}[]) {
+    static init(targetElement: HTMLDivElement, ratio: number, tags: {"key": string, "value": number}[]) {
         var fill = d3.scale.category20b();
 
-        var w = window.innerWidth,
-            h = window.innerHeight;
+        var w = targetElement.parentElement.offsetWidth,
+            h = targetElement.parentElement.offsetWidth * ratio;
 
         var max,
             fontSize;
@@ -41,8 +41,8 @@ export class D3JsWordcloud {
         }
 
         function draw(data, bounds) {
-            var w = window.innerWidth,
-                h = window.innerHeight;
+            var w = targetElement.parentElement.offsetWidth,
+                h = targetElement.parentElement.offsetWidth * ratio;
 
             svg.attr("width", w).attr("height", h);
 
