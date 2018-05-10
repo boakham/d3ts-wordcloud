@@ -19,15 +19,17 @@ export class D3JsWordcloud {
 
     constructor(
         protected targetElement: HTMLDivElement,
-        protected ratio: number,
-        protected tags: Tag[]
+        protected tags: Tag[],
+        protected ratio: number = 0.5625,
+        protected fontFamily: string = 'impact',
+        protected fontSizeRange: number[] = [8, 100],
     ) {
         this.init();
     }
 
     update(): void {
-        this.layout.font('impact').spiral('archimedean');
-        this.fontSize = d3.scale['sqrt']().range([10, 100]);
+        this.layout.font(this.fontFamily).spiral('archimedean');
+        this.fontSize = d3.scale['sqrt']().range(this.fontSizeRange);
 
         if (this.tags.length) {
             this.fontSize.domain([+this.tags[this.tags.length - 1].value || 1, +this.tags[0].value]);
