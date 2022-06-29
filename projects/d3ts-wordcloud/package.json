@@ -1,0 +1,30 @@
+{
+  "name": "d3ts-wordcloud",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0",
+    "d3": "^7.5.0",
+    "d3-cloud-ts": "^1.2.8"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boakham/d3ts-wordcloud.git"
+  },
+  "keywords": [
+    "word",
+    "cloud",
+    "tag",
+    "canvas",
+    "visualization"
+  ],
+  "author": "Benjamin Oakham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boakham/d3ts-wordcloud/issues"
+  },
+  "homepage": "https://github.com/boakham/d3ts-wordcloud#readme"
+}

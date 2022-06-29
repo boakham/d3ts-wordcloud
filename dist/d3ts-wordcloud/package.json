@@ -1,0 +1,50 @@
+{
+  "name": "d3ts-wordcloud",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.3.0",
+    "@angular/core": "^13.3.0",
+    "d3": "^7.5.0",
+    "d3-cloud-ts": "^1.2.8"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boakham/d3ts-wordcloud.git"
+  },
+  "keywords": [
+    "word",
+    "cloud",
+    "tag",
+    "canvas",
+    "visualization"
+  ],
+  "author": "Benjamin Oakham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boakham/d3ts-wordcloud/issues"
+  },
+  "homepage": "https://github.com/boakham/d3ts-wordcloud#readme",
+  "module": "fesm2015/d3ts-wordcloud.mjs",
+  "es2020": "fesm2020/d3ts-wordcloud.mjs",
+  "esm2020": "esm2020/d3ts-wordcloud.mjs",
+  "fesm2020": "fesm2020/d3ts-wordcloud.mjs",
+  "fesm2015": "fesm2015/d3ts-wordcloud.mjs",
+  "typings": "d3ts-wordcloud.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./d3ts-wordcloud.d.ts",
+      "esm2020": "./esm2020/d3ts-wordcloud.mjs",
+      "es2020": "./fesm2020/d3ts-wordcloud.mjs",
+      "es2015": "./fesm2015/d3ts-wordcloud.mjs",
+      "node": "./fesm2015/d3ts-wordcloud.mjs",
+      "default": "./fesm2020/d3ts-wordcloud.mjs"
+    }
+  },
+  "sideEffects": false
+}
